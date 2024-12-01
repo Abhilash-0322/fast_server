@@ -7,4 +7,6 @@ app = FastAPI()
 async def read_root():
     return ("""<h1 id="h1">Hello, world!</h1>
     <h2>Hello, Again</h2>
-    <script>document.getElementById("h1").style.color="red";</script>""")
+    <script>let h1=document.getElementById("h1");
+    h1.style.color="red";
+    </script>""")
